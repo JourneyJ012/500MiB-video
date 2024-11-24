@@ -1,0 +1,10 @@
+#!/bin/bash 
+
+if command -v apt-get; then
+    sudo apt-get install ffmpeg
+elif command -v pacman; then
+    sudo pacman -S ffmpeg
+else
+    echo 'Your system's package manager isn't supported.' > /dev/stderr;
+    echo 'See https://www.ffmpeg.org/ for instructions on how to install ffmpeg.' > /dev/stderr;
+fi
