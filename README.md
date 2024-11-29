@@ -4,6 +4,8 @@ Split a video into multiple chunks no larger than a set 500MiB.
 
 ## Getting Started
 
+
+This project **requires** an Nvidia GTX 970 or later, due to using the "hevc_nvenc" encoder. The encoder can be changed in the source code to an alternative encoder, such as libx264, libx265 or libsvtav1.
 This project depends on [ffmpeg](https://github.com/FFmpeg/FFmpeg). If you're using an arch or debian-based Linux distribution, you can use [the bootstrap script](./script/bootstrap) to install it:
 
 ```bash
